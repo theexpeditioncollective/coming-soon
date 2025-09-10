@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Expedition Collective</title>
     <style>
-        body {
+        html, body {
+            height: 100%;
             margin: 0;
             padding: 0;
+            overflow: hidden; /* Prevents scrollbars from appearing on the body */
+        }
+        body {
             background: #111;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover; /* This will cover the screen, zooming if necessary */
         }
     </style>
 </head>
